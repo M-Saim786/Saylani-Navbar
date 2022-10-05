@@ -1,0 +1,427 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a span {
+    font-weight: bolder;
+}
+
+nav {
+    background-color: white;
+    /* border: 1px solid red; */
+    height: 13vh;
+}
+
+#logo {
+    width: 15%;
+    margin-left: 100px;
+    margin-top: 10px;
+    display: inline-block;
+    /* border: 1px solid red; */
+}
+
+#up-nav {
+    /* border: 1px solid red; */
+    height: 5vh;
+    background-color: #e3e3e3;
+}
+.email
+{
+    /* border: 1px solid red; */
+    font-family: sans-serif;
+    color: rgb(86, 82, 82);
+    font-weight: bolder;
+    margin: 8px 108px;
+    font-size: 14px;
+
+    display: inline-block;
+}
+.phone
+{
+    font-family: sans-serif;
+    color: rgb(86, 82, 82);
+    font-weight: bolder;
+    margin: 8px -60px;
+    font-size: 14px;
+
+    display: inline-block;
+}
+/* .language
+{
+    border: 1px solid red;
+    float: right;
+    margin-right: 20px;
+    list-style: none;
+    margin-top: 8px;
+    display: block;
+    background-color: white;
+    color: black;
+}
+.language ul
+{
+    list-style: none;
+} */
+.navbar {
+    /* border: 1px solid red; */
+    display: block;
+    margin: -50px 330px;
+    width: 60%;
+}
+
+.navbar ul li {
+    display: inline-block;
+    /* border: 1px solid black; */
+    padding: 8px 14px;
+    font-family: system-ui;
+}
+
+li {
+    font-size: 1rem;
+    border: none;
+    padding: 20px 4px;
+}
+
+.navbar ul li a:hover span {
+    border-bottom: 2px solid rgb(27, 186, 27);
+}
+
+li a:active {
+    color: #0d6db7;
+}
+
+.drop {
+    /* border: 1px solid rgb(170, 165, 165); */
+    width: 220px;
+    margin: 10px 0px;
+    display: none;
+    position: absolute;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgb(165, 156, 156);
+}
+
+.drop ul a {
+    /* border: 1px solid red; */
+    display: flex;
+    transition: height 0.4s;
+}
+
+.drop ul a:hover {
+    background-color: rgb(27, 186, 27);
+    color: white;
+}
+
+#about:hover .drop {
+    display: block;
+    position: absolute;
+}
+
+.submen-1 {
+    /* border: 1px solid red; */
+    width: 170px;
+    position: absolute;
+    display: none;
+    margin: 10px 0px;
+    box-shadow: 1px 1px 5px rgb(165, 156, 156);
+    border-radius: 5px;
+
+}
+
+.submen-1 ul li {
+    display: flex;
+    transition: height 0.4s;
+
+}
+
+.submen-1 ul li:hover {
+    /* color: white; */
+    background-color: #e3e3e3;
+    /* display: flex; */
+}
+
+#services:hover .submen-1 {
+    display: block;
+}
+
+.submen-2 {
+    /* border: 1px solid red; */
+    width: 150px;
+    position: absolute;
+    display: none;
+    margin: 10px 0px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgb(165, 156, 156);
+}
+
+.submen-2 ul a {
+    display: flex;
+    transition: height 0.4s;
+}
+
+.submen-2 ul a:hover {
+    background-color: rgb(27, 186, 27);
+    color: white;
+}
+
+#media:hover .submen-2 {
+    display: block;
+}
+
+.submen-3 {
+    /* border: 1px solid red; */
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgb(165, 156, 156);
+    display: none;
+    position: absolute;
+    margin: 10px 0px;
+    width: 110px;
+}
+
+.submen-3 ul a {
+    display: flex;
+    transition: height 0.4s;
+}
+
+.submen-3 ul a:hover {
+    background-color: rgb(27, 186, 27);
+    color: white;
+}
+
+.contact:hover .submen-3 {
+    display: block;
+}
+
+
+/* Sub-SubMenu Starts Here */
+.sub-submen-1 {
+    /* border: 1px solid red; */
+    margin: -7px 157px;
+    width: 280px;
+    display: none;
+    position: absolute;
+    box-shadow: 0px 1px 5px rgb(165, 156, 156);
+}
+
+.sub-submen-1 ul a li:hover {
+    background-color: rgb(27, 186, 27);
+    color: white;
+    transition: width 0.4s;
+
+}
+
+.sub-submen-1 ul a {
+    display: flex;
+    transition: width 0.4s;
+}
+
+.sub-submen-1 ul a:hover {
+    background-color: rgb(27, 186, 27);
+
+    color: white;
+}
+
+#health:hover .sub-submen-1 {
+    display: inline-block;
+}
+
+.sub-submen-2 {
+    width: 265px;
+    position: absolute;
+    display: none;
+    margin: -9px 157px;
+    /* border: 1px solid red; */
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgb(165, 156, 156);
+    z-index: 1;
+}
+
+.sub-submen-2 ul a li:hover {
+    background-color: rgb(27, 186, 27);
+    color: white;
+    transition: width 0.4s;
+
+}
+
+#education:hover .sub-submen-2 {
+    display: block;
+}
+
+.sub-submen-vt {
+    /* border: 1px solid red; */
+    border-radius: 5px;
+    position: absolute;
+    display: none;
+    width: 250px;
+    margin: -7px 252px;
+    box-shadow: 1px 1px 5px rgb(165, 156, 156);
+}
+
+#vt:hover .sub-submen-vt {
+    display: block;
+}
+
+#te:hover .sub-submen-vt {
+    display: block;
+}
+
+#ie:hover .sub-submen-vt {
+    display: block;
+}
+
+#af:hover .sub-submen-vt {
+    display: block;
+}
+
+.food {
+    /* border: 1px solid red; */
+    margin: -8px 157px;
+    width: 210px;
+    position: absolute;
+    display: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgb(165, 156, 156);
+}
+
+.food ul li:hover {
+    display: flex;
+    /* border: 1px solid red; */
+    color: white;
+    background-color: rgb(27, 186, 27);
+    transition: width 0.4s;
+    display: flex;
+}
+
+#food:hover .food {
+    display: block;
+}
+
+.sadqa {
+    /* border: 1px solid red; */
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgb(165, 156, 156);
+    margin: -7px 157px;
+    width: 222px;
+    position: absolute;
+    display: none;
+}
+
+.sadqa ul li:hover {
+    display: flex;
+    color: white;
+    background-color: rgb(27, 186, 27);
+    transition: width 0.4s;
+}
+
+#sadqa:hover .sadqa {
+    display: block;
+
+}
+
+.social {
+    /* border: 1px solid red; */
+    border-radius: 5px;
+    width: 222px;
+    box-shadow: 1px 1px 5px rgb(165, 156, 156);
+    margin: -7px 156px;
+    position: absolute;
+    display: none;
+
+}
+
+.social ul li:hover {
+    display: flex;
+    color: white;
+    transition: width 0.4s;
+    background-color: rgb(27, 186, 27);
+
+}
+
+#social:hover .social {
+    display: block;
+}
+
+.aid {
+    width: 250px;
+    /* border: 1px solid red; */
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgb(165, 156, 156);
+    margin: -8px 157px;
+    position: absolute;
+    display: none;
+}
+
+.aid ul li:hover {
+    color: white;
+    transition: width 0.4s;
+    display: flex;
+    background-color: rgb(27, 186, 27);
+
+}
+
+#aid:hover .aid {
+    display: block;
+}
+
+.ehsas {
+    /* border: 1px solid red; */
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgb(165, 156, 156);
+    width: 200px;
+    margin: -7px 156px;
+    position: absolute;
+    display: none;
+}
+
+.ehsas ul li:hover {
+    color: white;
+    transition: width 0.4s;
+    display: flex;
+    background-color: rgb(27, 186, 27);
+
+}
+
+#ehsas:hover .ehsas {
+    display: block;
+}
+
+#uk {
+    /* border: 1px solid red; */
+    width: 50px;
+    position: absolute;
+    /* display: block; */
+    /* margin: 20px 20px; */
+}
+
+
+#usa {
+    /* border: 1px solid red; */
+    width: 50px;
+    position: absolute;
+    display: block;
+}
+.donate
+{
+    width: 10%;
+    height: 70%;
+    float: right;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 50px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    background-color: #0d6db7;
+    transition:all  0.4s;
+
+}
+.donate:hover
+{
+    width: 12%;
+    height: 75%;
+}
